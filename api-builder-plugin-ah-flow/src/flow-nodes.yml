@@ -1,0 +1,85 @@
+flow-nodes:
+  flow:
+    name: Invoke Flow
+    icon: arrow-wave.svg
+    description: Invokes Flows
+    category: core
+    methods:
+      trigger:
+        name: Invoke Flow
+        description: Triggers a flow that can has an attatched Flow listener.
+        parameters:
+          id:
+            name: Flow listener ID
+            description: The Flow ID configured in the listener.
+            required: true
+            initialType: string
+            schema:
+              type: string
+          data:
+            name: Data
+            description: The data to send to the flow.
+            required: false
+            schema: {}
+        returns:
+          name: Next
+          description: The Flow responded successfully.
+          context: $.flowResponse
+          schema: {}
+        throws:
+          name: Error
+          description: The Flow failed to respond successfully.
+          context: $.error
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+  flow-response:
+      name: Flow Listener Response
+      icon: arrow-wave.svg
+      description: Ends Flow Listener with a response to send back to the Invoke Flow flow-node.
+      category: core
+      methods:
+        respond:
+          name: Respond from Flow
+          description: Triggers a flow that has a bound Flow flow-trigger.
+          parameters:
+            data:
+              name: Data
+              description: The data to respond with
+              required: false
+              schema: {}
+            error:
+              name: Is error
+              description: Control if the response is an error
+              required: true
+              initialType: boolean
+              schema:
+                default: false
+                type: boolean
+          returns:
+            name: Next
+            description: Response set successfully.
+            context: $.response
+            schema:
+              type: object
+              properties:
+                error:
+                  type: boolean
+                data: {}
+          throws:
+            name: Error
+            description: Unexpected error occurred.
+            context: $.response
+            schema:
+              type: object
+              properties:
+                error:
+                  type: boolean
+                  const: true
+                data:
+                  type: object
+                  properties:
+                    message:
+                      type: string

@@ -1,0 +1,60 @@
+{
+	"extends": [
+		"axway/env-node",
+		"axway/+mocha",
+		"axway/+chai"
+	],
+	"rules": {
+		"array-bracket-spacing": [
+			"error",
+			"always",
+			{
+				"objectsInArrays": false,
+				"arraysInArrays": false
+			}
+		],
+		"comma-dangle": [
+			"warn",
+			"never"
+		],
+		"import/first": [
+			"error",
+			"absolute-first"
+		],
+		"import/no-mutable-exports": "error",
+		"import/no-unresolved": [
+			"error",
+			{
+				"commonjs": true,
+				"caseSensitive": true,
+				"ignore": [
+					"@axway/api-builder-runtime"
+				]
+			}
+		],
+		"mocha/handle-done-callback": "off",
+		"no-console": "error",
+		"no-debugger": "error",
+		"no-multi-spaces": "error",
+		"no-multi-str": "off",
+		"no-var": "error",
+		"object-shorthand": "error",
+		"prefer-arrow-callback": "error",
+		"prefer-const": "error",
+		"prefer-template": "warn",
+		"security/detect-child-process": "off",
+		"security/detect-non-literal-require": "off",
+		"security/detect-non-literal-regexp": "off",
+		"space-unary-ops": "off",
+		"max-len": [
+			"error",
+			{
+				"code": 100,
+				"ignoreUrls": true,
+				"ignoreStrings": true,
+				"ignoreRegExpLiterals": true,
+				"ignoreTemplateLiterals": true
+			}
+		]
+	}
+}
