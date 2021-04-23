@@ -1,0 +1,13 @@
+{
+  "name": "api-builder-plugins-workspaces",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "api-builder-plugin-flow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alasdairhurst/api-builder-plugins.git"
+  },
+  "author": "Alasdair Hurst"
+}

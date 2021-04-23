@@ -1,4 +1,4 @@
-# api-builder-plugin-ah-flow
+# @alasdair/api-builder-plugin-flow
 
 This is a plugin for [API Builder](https://docs.axway.com/bundle/API_Builder_4x_allOS_en/page/api_builder.html) that provides a event flow-trigger that is used to invoke flows and return their response.
 
@@ -9,7 +9,7 @@ This is a plugin to let flows invoke other reusable flows from the API Builder f
 You can install this plugin into an existing API Builder project.  Follow the [Getting Started Guide](https://docs.axway.com/bundle/API_Builder_4x_allOS_en/page/api_builder_getting_started_guide.html) to create an API Builder service if you do not already have one.
 
 ```bash
-$ npm install api-builder-plugin-ah-flow
+$ npm install @alasdair/api-builder-plugin-flow
 ```
 
 ## Usage

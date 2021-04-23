@@ -1,5 +1,5 @@
 {
-	"name": "api-builder-plugin-ah-flow",
+	"name": "@alasdair/api-builder-plugin-flow",
 	"version": "0.1.0",
 	"description": "A flow-trigger and flow-node for calling flows as functions.",
 	"author": {
