@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+      - run: cd api-builder-plugin-flow
       - run: npm install --legacy-peer-deps
       - run: npm publish
         env:
