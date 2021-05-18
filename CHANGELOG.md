@@ -1,3 +1,6 @@
+### 0.2.1
+- Change repo
+
 ### 0.2.0
 - Rebrand to @alasdair/api-builder-plugin-invoke-flow
 - Update flow-trigger and flow-node names.
