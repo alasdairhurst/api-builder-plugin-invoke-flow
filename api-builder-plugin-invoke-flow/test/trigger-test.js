@@ -29,7 +29,7 @@ describe('Flow-trigger flow', () => {
 		const { flow: flowTrigger } = exported.triggers;
 		const error = new Error('omg - errors!');
 		const response = 'Great!';
-		// mock a flow response
+		// mock a Flow response
 		const invoke = simple.mock()
 			.resolveWith({ error: false, data: response })
 			.resolveWith({ error: true, data: error })
@@ -45,9 +45,9 @@ describe('Flow-trigger flow', () => {
 			'triggerParameters'
 		]);
 
-		expect(flowTrigger.name).to.equal('Flow Listener');
+		expect(flowTrigger.name).to.equal('Flow listener');
 		expect(flowTrigger.description)
-			.to.equal('Can be triggered by the Invoke Flow flow-node.');
+			.to.equal('Can be triggered by the Invoke flow flow-node.');
 		expect(flowTrigger.icon).to.be.a('string')
 			.and.to.satisfy(a => a.startsWith('data:image/svg+xml;base64,'));
 		expect(flowTrigger.requestSchema).to.deep.equal({
@@ -125,7 +125,7 @@ describe('Flow-trigger flow', () => {
 		expect(invoke.calls).to.have.length(4);
 		expect(invoke.calls[3].args).to.deep.equal([ undefined ]);
 		expect(output4).to.equal('error');
-		expect(value4.message).to.equal('Triggered Flow "BEEP" did not end with Flow Response');
+		expect(value4.message).to.equal('Triggered Flow "BEEP" did not end with Flow response');
 
 		// destroy trigger
 		await created.destroy();

@@ -24,7 +24,7 @@ describe('Flow-node flow', () => {
 		]);
 		expect(triggerNode).to.be.a('object');
 		// Ensure the flow-node matches the spec
-		expect(triggerNode.name).to.equal('Invoke Flow');
+		expect(triggerNode.name).to.equal('Invoke flow');
 		expect(triggerNode.description).to.equal('Invokes Flows');
 		expect(triggerNode.icon).to.be.a('string');
 		expect(triggerNode.getMethods()).to.deep.equal([
@@ -33,8 +33,8 @@ describe('Flow-node flow', () => {
 
 		expect(responseNode).to.be.a('object');
 		// Ensure the flow-node matches the spec
-		expect(responseNode.name).to.equal('Flow Listener Response');
-		expect(responseNode.description).to.equal('Ends Flow Listener with a response to send back to the Invoke Flow flow-node.');
+		expect(responseNode.name).to.equal('Flow listener Response');
+		expect(responseNode.description).to.equal('Ends Flow listener with a response to send back to the Invoke flow flow-node.');
 		expect(responseNode.icon).to.be.a('string');
 		expect(responseNode.getMethods()).to.deep.equal([
 			'respond'

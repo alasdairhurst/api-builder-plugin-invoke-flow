@@ -1,12 +1,12 @@
 flow-nodes:
   flow:
-    name: Invoke Flow
+    name: Invoke flow
     icon: arrow-wave.svg
     description: Invokes Flows
     category: core
     methods:
       trigger:
-        name: Invoke Flow
+        name: Invoke flow
         description: Triggers a flow that can has an attatched Flow listener.
         parameters:
           id:
@@ -36,9 +36,9 @@ flow-nodes:
               message:
                 type: string
   flow-response:
-      name: Flow Listener Response
+      name: Flow listener Response
       icon: arrow-wave.svg
-      description: Ends Flow Listener with a response to send back to the Invoke Flow flow-node.
+      description: Ends Flow listener with a response to send back to the Invoke flow flow-node.
       category: core
       methods:
         respond:

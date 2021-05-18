@@ -21,7 +21,7 @@
  * @return {*} The response value (resolves to "next" output, or if the method
  *  does not define "next", the first defined output).
  */
-async function trigger(params, { pluginContext: flowMap }) {
+async function invoke(params, { pluginContext: flowMap }) {
 	const { id, data } = params;
 	if (!id) {
 		throw new Error('Missing required parameter: id');
@@ -40,7 +40,7 @@ async function trigger(params, { pluginContext: flowMap }) {
 	}
 
 	if (typeof response !== 'object' || !('error' in response)) {
-		throw new Error(`Triggered Flow "${id}" did not end with Flow Response`);
+		throw new Error(`Invoked flow "${id}" did not end with 'Flow response'`);
 	}
 	if (response.error) {
 		throw response.data;
@@ -56,6 +56,6 @@ async function respond(params) {
 }
 
 module.exports = {
-	trigger,
+	invoke,
 	respond
 };

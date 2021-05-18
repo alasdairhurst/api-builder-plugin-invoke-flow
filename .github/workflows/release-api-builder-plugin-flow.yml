@@ -7,7 +7,7 @@ on: workflow_dispatch
 
 defaults:
   run:
-    working-directory: ./api-builder-plugin-flow
+    working-directory: ./api-builder-plugin-invoke-flow
 
 jobs:
   publish-npm:
