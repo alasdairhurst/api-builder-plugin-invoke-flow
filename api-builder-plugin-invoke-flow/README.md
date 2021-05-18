@@ -14,9 +14,9 @@ $ npm install @alasdair/api-builder-plugin-invoke-flow
 
 ## Usage
 
-When you install this plugin, you get a `Flow listener` flow-trigger, and two flow-nodes: `Invoke flow` and `Flow listener Response`. 
+When you install this plugin, you get a `Flow listener` flow-trigger, and two flow-nodes: `Invoke flow` and `Flow listener response`. 
 
-`Flow listener` provides a interface for your reusable Flow. Flows which have this listener must make use of the `Flow listener Response` Flow-nodes in order to define what the flow will return or end with.
+`Flow listener` provides a interface for your reusable Flow. Flows which have this listener must make use of the `Flow listener response` Flow-nodes in order to define what the flow will return or end with.
 `Flow listener` should be configured with a unique ID which can be used by any number of `Invoke flow` flow-nodes to call this flow and wait for the response.
 `Flow listener` outputs `Data` which can be provided as a Flow input. This `Data` is provided by calls to `Invoke flow`.
 

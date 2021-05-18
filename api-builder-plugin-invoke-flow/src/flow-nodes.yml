@@ -2,16 +2,16 @@ flow-nodes:
   flow:
     name: Invoke flow
     icon: arrow-wave.svg
-    description: Invokes Flows
+    description: Invokes flows
     category: core
     methods:
       trigger:
         name: Invoke flow
-        description: Triggers a flow that can has an attatched Flow listener.
+        description: Invokes a flow that can has an attatched Flow listener.
         parameters:
           id:
             name: Flow listener ID
-            description: The Flow ID configured in the listener.
+            description: The flow ID configured in the listener.
             required: true
             initialType: string
             schema:
@@ -23,12 +23,12 @@ flow-nodes:
             schema: {}
         returns:
           name: Next
-          description: The Flow responded successfully.
+          description: The flow responded successfully.
           context: $.flowResponse
           schema: {}
         throws:
           name: Error
-          description: The Flow failed to respond successfully.
+          description: The flow didn't respond successfully.
           context: $.error
           schema:
             type: object
@@ -36,14 +36,14 @@ flow-nodes:
               message:
                 type: string
   flow-response:
-      name: Flow listener Response
+      name: Flow listener response
       icon: arrow-wave.svg
-      description: Ends Flow listener with a response to send back to the Invoke flow flow-node.
+      description: Ends `Flow listener` with a response to send back to the `Invoke flow` flow-node.
       category: core
       methods:
         respond:
-          name: Respond from Flow
-          description: Triggers a flow that has a bound Flow flow-trigger.
+          name: Respond from flow
+          description: Triggers a flow that has a bound `Flow listener` flow-trigger.
           parameters:
             data:
               name: Data

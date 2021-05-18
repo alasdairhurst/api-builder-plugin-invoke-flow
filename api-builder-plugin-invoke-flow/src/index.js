@@ -4,7 +4,7 @@ const actions = require('./actions');
 
 function getFlowTrigger({ flowMap }) {
 	return {
-		name: 'Invoke flow listener',
+		name: 'Flow listener',
 		description: 'Can be triggered by the \'Invoke flow\' flow-node.',
 		requestSchema: {
 			title: 'Data',
