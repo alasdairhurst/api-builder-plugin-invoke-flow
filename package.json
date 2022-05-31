@@ -1,6 +1,6 @@
 {
 	"name": "@alasdair/api-builder-plugin-invoke-flow",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "A flow-trigger and flow-node for calling flows as functions.",
 	"author": {
 		"name": "Alasdair Hurst",
@@ -16,7 +16,7 @@
 		"flow"
 	],
 	"engines": {
-		"node": ">= 12.15",
+		"node": ">= 17",
 		"apibuilder": ">= 4.91.4"
 	},
 	"repository": {

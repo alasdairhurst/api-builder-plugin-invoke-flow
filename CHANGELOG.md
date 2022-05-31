@@ -1,3 +1,6 @@
+### 0.4.0.
+- Change minimum node version
+
 ### 0.3.0
 - Change minimum api builder version to 4.91.4
 
