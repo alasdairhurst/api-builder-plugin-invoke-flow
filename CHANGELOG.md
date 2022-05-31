@@ -1,3 +1,6 @@
+### 0.3.0
+- Change minimum api builder version to 4.91.4
+
 ### 0.2.2
 - Change peer dependencies to engines.
 
