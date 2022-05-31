@@ -1,3 +1,6 @@
+### 0.2.2
+- Change peer dependencies to engines.
+
 ### 0.2.1
 - Change repo
 
